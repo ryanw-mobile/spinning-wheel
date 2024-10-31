@@ -1,4 +1,4 @@
-package com.rwmobi.githubcidemo.ui
+package com.rwmobi.spinningwheel.ui
 
 import androidx.compose.animation.core.Animatable
 import androidx.compose.animation.core.exponentialDecay

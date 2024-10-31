@@ -1,4 +1,4 @@
-package com.rwmobi.githubcidemo
+package com.rwmobi.spinningwheel
 
 import org.junit.Test
 

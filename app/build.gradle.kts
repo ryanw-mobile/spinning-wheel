@@ -11,7 +11,7 @@ plugins {
 }
 
 android {
-    namespace = "com.rwmobi.githubcidemo"
+    namespace = "com.rwmobi.spinningwheel"
 
     signingConfigs {
         create("release") {
@@ -46,20 +46,20 @@ android {
 
     compileSdk = libs.versions.compilesdk.get().toInt()
     defaultConfig {
-        applicationId = "com.rwmobi.githubcidemo"
+        applicationId = "com.rwmobi.spinningwheel"
         minSdk = libs.versions.minsdk.get().toInt()
         targetSdk = libs.versions.targetsdk.get().toInt()
         versionCode = 1
         versionName = "1.0"
 
-        testInstrumentationRunner = "uk.ryanwong.catnews.app.ui.CustomTestRunner"
+        testInstrumentationRunner = "com.rwmobi.spinningwheel.app.ui.CustomTestRunner"
         vectorDrawables {
             useSupportLibrary = true
         }
 
         // Bundle output filename
         val timestamp = SimpleDateFormat("yyyyMMdd-HHmmss").format(Date())
-        setProperty("archivesBaseName", "cidemo-$versionName-$timestamp")
+        setProperty("archivesBaseName", "spinningwheel-$versionName-$timestamp")
     }
 
     buildTypes {
@@ -71,7 +71,7 @@ android {
                     .forEach { output ->
                         val timestamp = SimpleDateFormat("yyyyMMdd-HHmmss").format(Date())
                         val outputFileName =
-                            "cidemo-${variant.versionName}-$timestamp-${variant.name}.apk"
+                            "spinningwheel-${variant.versionName}-$timestamp-${variant.name}.apk"
                         output.outputFileName = outputFileName
                     }
             }

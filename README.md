@@ -1,57 +1,43 @@
-# Android CI/CD Pipeline Template Repository <br/>[![Renovate enabled](https://img.shields.io/badge/renovate-enabled-brightgreen.svg)](https://renovatebot.com/)
+# Jetpack Compose Spinning Wheel <br/>[![Pull request](https://img.shields.io/badge/PRs-welcome-success?style=flat)](https://github.com/ryanw-mobile/spinning-wheel/pulls) ![GitHub Repo stars](https://img.shields.io/github/stars/ryanw-mobile/spinning-wheel?style=flat) ![Gradle Build](https://github.com/ryanw-mobile/spinning-wheel/actions/workflows/main_build.yml/badge.svg) [![Renovate enabled](https://img.shields.io/badge/renovate-enabled-brightgreen.svg)](https://renovatebot.com/)
 
-This repository contains a GitHub Actions workflow that automates the build and release process for an Android application. The workflow compiles the application, generates APK and AAB files, and creates a new GitHub release with these files attached. It is triggered by tagging a commit with a specific pattern (`release/*`).
+This is a simple toy app with a spinning wheel.
 
-## Workflow Overview
+I saw something similar in an App, and thought it should not be too difficult to make one using
+Jetpack Compose.
 
-The `.github/workflows/android-build-and-release.yml` file defines the CI/CD pipeline. It performs the following actions:
+I am open to try something fun in this App. If you have any new idea to make this app more
+interesting, feel free to talk to me, and contribute via pull requests!
 
-1. Checks out the code.
-2. Sets up the JDK environment.
-3. Builds the APK and AAB files using Gradle.
-4. Creates a GitHub release.
-5. Attaches the APK and AAB files to the GitHub release.
+## Let's download and run it!
 
-## Prerequisites
+This project was configured to build using Android Studio Ladybug | 2024.2.1 Patch 1. You will need
+to have Java 17 to build the project.
 
-- Android Studio project set up with Gradle.
-- JDK 21 configured in the project.
-- A `release` branch or appropriate branch strategy to initiate the release process.
+Alternatively, you can find the ready-to-install APKs and App Bundles under
+the [release section](https://github.com/ryanw-mobile/spinning-wheel/releases).
 
-## Usage
+## Technical details
 
-To trigger the workflow and create a new release:
+### Dependencies
 
-1. Ensure your changes are merged into the `main` or `release` branch (as per your project's branching strategy).
-2. Tag the commit you want to release with a `release/*` pattern, e.g., `release/1.0.0`.
-```
-git tag release/1.0.0
-git push origin release/1.0.0
-```
+_Preparing..._
 
-3. The workflow will be triggered automatically, building the application and creating a new release named after the tag, with the APK and AAB files attached.
+### Plugins
 
-## Configuration
-
-You may need to adjust the `android-build-and-release.yml` workflow file to match your project's specific requirements, such as changing the JDK version or modifying the Gradle build tasks.
-
-## Personal Access Token (PAT)
-
-This workflow uses a Personal Access Token (PAT) with `repo` scope for creating releases. Store your PAT in the repository's secrets with the name `PAT_FOR_RELEASES`.
+_Preparing..._
 
 ## Contributing
 
-Contributions to this project are welcome! Please fork the repository, make your changes, and submit a pull request.
+Contributions to this project are welcome! Please fork the repository, make your changes, and submit
+a pull request.
 
 ## License
 
 Apache 2.0
 
-## Acknowledgments
+### Icon licenses
 
-- GitHub Actions for providing the automation platform.
-- All contributors who help maintain and improve this project.
+Every tiny piece matters. This App contains the icons contributed by:
 
-## Support
-
-For support or questions about using this workflow, please [open an issue](https://github.com/ryanw-mobile/testlab-release-ci/issues) in this repository.
+<a href="https://www.flaticon.com/free-icons/spinning-wheel" title="spinning wheel icons">Spinning
+wheel icons created by Vectorslab - Flaticon</a>

@@ -1,4 +1,4 @@
-package com.rwmobi.githubcidemo
+package com.rwmobi.spinningwheel
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -11,14 +11,14 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
-import com.rwmobi.githubcidemo.ui.RealisticSpinningWheel
-import com.rwmobi.githubcidemo.ui.theme.GithubCIDemoTheme
+import com.rwmobi.spinningwheel.ui.RealisticSpinningWheel
+import com.rwmobi.spinningwheel.ui.theme.SpinningWheelAppTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            GithubCIDemoTheme {
+            SpinningWheelAppTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
@@ -60,7 +60,7 @@ fun WheelDemo() {
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
-    GithubCIDemoTheme {
+    SpinningWheelAppTheme {
         WheelDemo()
     }
 }
