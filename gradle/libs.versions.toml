@@ -1,8 +1,8 @@
 [versions]
 # App configurations, not dependencies
 minsdk = "26"
-targetsdk = "34"
-compilesdk = "34"
+targetsdk = "35"
+compilesdk = "35"
 
 agp = "8.7.1"
 kotlin = "2.0.21"
