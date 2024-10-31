@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Github CI Demo"
+rootProject.name = "Spinning Wheel"
 include(":app")
